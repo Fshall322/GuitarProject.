@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{93585B3D-FDA4-40F0-B8C0-6C13A781A3B5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>GroupProject_Guitar_GroupC.My.MyApplication</StartupObject>
+    <RootNamespace>GroupProject_Guitar_GroupC</RootNamespace>
+    <AssemblyName>Guitar Chord Hero</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Guitar Chord Hero.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Guitar Chord Hero.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>guitar.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.vb">
+      <DependentUpon>Help.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Help.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="guitar.ico" />
+    <None Include="Resources\Gsus.wav" />
+    <None Include="Resources\Gmaj7.wav" />
+    <None Include="Resources\Gm7.wav" />
+    <None Include="Resources\Gm.wav" />
+    <None Include="Resources\Gbsus.wav" />
+    <None Include="Resources\Gbmaj7.wav" />
+    <None Include="Resources\G7.wav" />
+    <None Include="Resources\G.wav" />
+    <None Include="Resources\G#m7.wav" />
+    <None Include="Resources\G#m.wav" />
+    <None Include="Resources\Fsus.wav" />
+    <None Include="Resources\Fmaj7.wav" />
+    <None Include="Resources\Fm7.wav" />
+    <None Include="Resources\Fm.wav" />
+    <None Include="Resources\F7.wav" />
+    <None Include="Resources\F.wav" />
+    <None Include="Resources\F#m7.wav" />
+    <None Include="Resources\F#m.wav" />
+    <None Include="Resources\F#7.wav" />
+    <None Include="Resources\F#.wav" />
+    <None Include="Resources\Esus.wav" />
+    <None Include="Resources\Emaj7.wav" />
+    <None Include="Resources\Em7.wav" />
+    <None Include="Resources\Em.wav" />
+    <None Include="Resources\Ebsus.wav" />
+    <None Include="Resources\Ebmaj7.wav" />
+    <None Include="Resources\Ebm7.wav" />
+    <None Include="Resources\Ebm.wav" />
+    <None Include="Resources\Eb7.wav" />
+    <None Include="Resources\Eb.wav" />
+    <None Include="Resources\E7.wav" />
+    <None Include="Resources\E.wav" />
+    <None Include="Resources\Dsus.wav" />
+    <None Include="Resources\Dmaj7.wav" />
+    <None Include="Resources\Dm7.wav" />
+    <None Include="Resources\Dm.wav" />
+    <None Include="Resources\Dbsus.wav" />
+    <None Include="Resources\Dbmaj7.wav" />
+    <None Include="Resources\Db7.wav" />
+    <None Include="Resources\Db.wav" />
+    <None Include="Resources\D7.wav" />
+    <None Include="Resources\D.wav" />
+    <None Include="Resources\Csus.wav" />
+    <None Include="Resources\Cmaj7.wav" />
+    <None Include="Resources\Cm7.wav" />
+    <None Include="Resources\Cm.wav" />
+    <None Include="Resources\C7.wav" />
+    <None Include="Resources\C.wav" />
+    <None Include="Resources\C#m7.wav" />
+    <None Include="Resources\C#m.wav" />
+    <None Include="Resources\Bsus.wav" />
+    <None Include="Resources\Bmaj7.wav" />
+    <None Include="Resources\Bm7.wav" />
+    <None Include="Resources\Bm.wav" />
+    <None Include="Resources\Bbsus.wav" />
+    <None Include="Resources\Bbmaj7.wav" />
+    <None Include="Resources\Bbm7.wav" />
+    <None Include="Resources\Bbm.wav" />
+    <None Include="Resources\Bb7.wav" />
+    <None Include="Resources\Bb.wav" />
+    <None Include="Resources\B7.wav" />
+    <None Include="Resources\B.wav" />
+    <None Include="Resources\Asus.wav" />
+    <None Include="Resources\Amaj7.wav" />
+    <None Include="Resources\Am7.wav" />
+    <None Include="Resources\Am.wav" />
+    <None Include="Resources\Absus.wav" />
+    <None Include="Resources\Abmaj7.wav" />
+    <None Include="Resources\Ab7.wav" />
+    <None Include="Resources\Ab.wav" />
+    <None Include="Resources\A7.wav" />
+    <None Include="Resources\A.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
